@@ -11,7 +11,6 @@ $(function(){
     RandCol[1] = Math.floor(Math.random() * 6) + 1;
     RandCol[2] = Math.floor(Math.random() * 6) + 1;
     RandCol[3] = Math.floor(Math.random() * 6) + 1;
-    alert (RandCol);
     
     var ClickCount = 0
     var CurLev = 1
@@ -132,47 +131,47 @@ $(function(){
         else{
         
             if (NumCol[0] == RandCol[0]){
-                dots[0].style.backgroundColor = "black";
-            }
-            else{
-                for(i = 0; i < 4; i++){
-                    if(NumCol[0] == RandCol[i]){
-                        dots[0].style.backgroundColor = "white";
-                    }
-                    break
-                }
-            }
-            if (NumCol[1] == RandCol[1]){
                 dots[1].style.backgroundColor = "black";
             }
             else{
                 for(i = 0; i < 4; i++){
-                    if(NumCol[1] == RandCol[i]){
+                    if(NumCol[0] == RandCol[i]){
                         dots[1].style.backgroundColor = "white";
+                        break;
                     }
-                    break
                 }
             }
-            if (NumCol[2] == RandCol[2]){
-                dots[2].style.backgroundColor = "black";
-            }
-            else{
-                for(i = 0; i < 4; i++){
-                    if(NumCol[2] == RandCol[i]){
-                        dots[2].style.backgroundColor = "white";
-                    }
-                    break
-                }
-            }
-            if (NumCol[3] == RandCol[3]){
+            if (NumCol[1] == RandCol[1]){
                 dots[3].style.backgroundColor = "black";
             }
             else{
                 for(i = 0; i < 4; i++){
-                    if(NumCol[3] == RandCol[i]){
+                    if(NumCol[1] == RandCol[i]){
                         dots[3].style.backgroundColor = "white";
+                        break;
                     }
-                    break
+                }
+            }
+            if (NumCol[2] == RandCol[2]){
+                dots[5].style.backgroundColor = "black";
+            }
+            else{
+                for(i = 0; i < 4; i++){
+                    if(NumCol[2] == RandCol[i]){
+                        dots[5].style.backgroundColor = "white";
+                        break;
+                    }
+                }
+            }
+            if (NumCol[3] == RandCol[3]){
+                dots[7].style.backgroundColor = "black";
+            }
+            else{
+                for(i = 0; i < 4; i++){
+                    if(NumCol[3] == RandCol[i]){
+                        dots[7].style.backgroundColor = "white";
+                        break;
+                    }
                 }
             }
         }
